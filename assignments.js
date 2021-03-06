@@ -31,3 +31,12 @@ console.log(description)
 
 //Strings and Template Literals Lecture
 description = `Portugal is in Europe, and its 11 million speak portugese`
+
+//Taking decisions: if/else statmenns Lecture
+let populationDifference = avaragePopulation - population;
+let populationDifferenceMore = population - avaragePopulation
+if(population > avaragePopulation){
+    console.log(`Syria's population is ${populationDifferenceMore} greater than the avarage population`)
+}else{
+    console.log(`Syria's population is ${populationDifference} million less than the avarage population` )
+}
