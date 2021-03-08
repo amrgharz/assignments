@@ -40,3 +40,30 @@ if(population > avaragePopulation){
 }else{
     console.log(`Syria's population is ${populationDifference} million less than the avarage population` )
 }
+
+// Type correction & coercion lecture
+console.log("9" - "5"); // 4
+console.log("19" - "13" + "17")  // 617
+console.log("19" - "13" + 17); // 23
+console.log('123' < 57) // false
+console.log(5 + 6 + '4' + 9 - 4 - 2 ) // 1143
+
+// Equality operators lecture
+//let numNeighbours = Number (prompt("How many neighbour countries does your country have?"))
+
+// if (numNeighbours === 1){ // Strict comparasion. '==' does type coercion
+//     console.log("Only one neighbour")
+// }else if( numNeighbours >1){
+//     console.log("More than one border")
+// }else{
+//     console.log("No Borders")
+// }
+
+//Logical operators lecture
+let countrySpeaksEnglish = true;
+let countryPopulationLessThan50Million = true;
+let notAnIsland = false;
+
+if ( countrySpeaksEnglish && countryPopulationLessThan50Million && !notAnIsland){
+    console.log("it looks a good country and meets all your needs")
+}
