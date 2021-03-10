@@ -67,3 +67,21 @@ let notAnIsland = false;
 if ( countrySpeaksEnglish && countryPopulationLessThan50Million && !notAnIsland){
     console.log("it looks a good country and meets all your needs")
 }
+//Switch statment lecture
+let spokenlanguage = 'chi';
+switch (spokenlanguage){
+    case 'arabic':
+        console.log("The 5th native spoken language")
+        break;
+    case 'english':
+        console.log('The 3rd native spoken language')
+        break;
+    case "spanish":
+        console.log("The second spoken language")
+        break;
+    case 'hindi':
+        console.log("the 4th native spoken language")
+        break;
+    default:
+        console.log("Chinese is the most spoken language")
+}
