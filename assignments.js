@@ -2,7 +2,7 @@
 
 let country = "Syria";
 let continent = 'Asia';
-let population = 18;
+let population = 34;
 
 console.log(country, continent, population)
 
@@ -85,3 +85,5 @@ switch (spokenlanguage){
     default:
         console.log("Chinese is the most spoken language")
 }
+// The ternery operator lecture
+population >= 33 ? console.log(`${country}'s population is higher than the average`) : console.log(`${country}'s population is below the average`)
