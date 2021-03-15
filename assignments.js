@@ -136,3 +136,89 @@ const describePopulation = function(country, population){
 }
 const iAmNotSure = describePopulation('China', 1441 )
 console.log(iAmNotSure)
+
+// Introduction to Arrays
+
+const populations = [45, 13, 17, 88]
+console.log(populations.length === 4 )
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(13), percentageOfWorld1(17), percentageOfWorld1(88)]
+
+console.log(percentages)
+
+//Basic arraies operations (Methods)
+
+const neighbours = ["Lebanon", "Jordan", "Palastine", "Iraq", "Turkey"]
+
+neighbours.push("Utopia")
+console.log(neighbours)
+neighbours.pop()
+console.log(neighbours)
+const germany = neighbours.includes("Germany")
+console.log(germany)
+if(germany){
+    console.log("yay!")
+}else{
+    console.log("Probabley not in the center of europ")
+}
+
+console.log(neighbours.indexOf("Iraq"))
+neighbours[3] = 'The rebublic of Iraq'
+console.log(neighbours)
+
+// Introduction to opjects
+
+const myDreamCountry = {
+    name: "New zealand",
+    capital: "Wellington",
+    language: "English",
+    population: 4.9,
+    neighbours:["Australia", "Australia2"],
+    descripe: function(){
+        
+    }
+}
+
+console.log( `${myDreamCountry.name} has a ${myDreamCountry.population} million ${myDreamCountry.language} speaking people,   ${myDreamCountry.neighbours.length} neighbour countries and a capital called ${myDreamCountry.capital}`)
+
+myDreamCountry.population = 6.9
+console.log(myDreamCountry.population)
+
+// Loops intro leccture
+
+for(i=1; i<=50; i++){
+    console.log(`Voter number ${i} is voting now!`)
+}
+
+//looping through arrays
+//const populations = [45, 13, 17, 88]
+let percentage2 = []
+for(i=0; i< populations.length; i++){
+    percentage2.push(percentageOfWorld1(populations[i]))
+}
+console.log(percentage2)
+
+//Looping backwards and loops in loops
+const listOfNeighbours =[
+    ["Canada", "Maxico"],
+    ["Spain"],
+    ["Norway", "Sweden", "Russia"]
+]
+// Loop and print the countries as indvedual countries
+for(neibours = 0; neibours < listOfNeighbours.length; neibours++){
+    //console.log(listOfNeighbours[neibours])
+
+    for (neibour = 0; neibour < listOfNeighbours[neibours].length; neibour++){
+        console.log(listOfNeighbours[neibours][neibour])
+    }
+}
+
+//Shit, it is working, I solved is without any help or googeling, I am a geniuse :)
+
+// While loop
+let percentage3 = []
+let per = 0
+while(per< populations.length){
+    percentage3.push(percentageOfWorld1(populations[per]))
+    per++;
+}
+console.log(percentage3)
